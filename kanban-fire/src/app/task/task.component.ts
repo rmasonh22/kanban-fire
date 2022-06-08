@@ -1,4 +1,4 @@
-import { Component, Input, Output, EventEmitter} from '@angular/core';
+import { Component, Input, Output, EventEmitter } from '@angular/core';
 import { Task } from './task';
 
 @Component({
@@ -7,7 +7,6 @@ import { Task } from './task';
   styleUrls: ['./task.component.css']
 })
 export class TaskComponent {
-  @Input() task: Task | null = null;
+  @Input() task: Task|null = null;
   @Output() edit = new EventEmitter<Task>();
-
 }
